@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        input {
+            width: 90%;
+            border-radius: 10px;
+            height: 50px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        div {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        div>button:nth-child(4n) {
+            background-color: rgb(11, 11, 10);
+            color: white;
+        }
+
+        div>button:nth-child(15) {
+            background-color: rgb(11, 11, 10);
+            color: white;
+        }
+
+        div>button:nth-child(13) {
+            background-color: rgb(253, 43, 6);
+            color: white;
+        }
+        h1{
+            color: rgb(14, 133, 123);
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>Masai Calculator</h1>
+        <input type="text" id="result" disabled>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <!-- <br> -->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            <!-- <br> -->
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <!-- <br> -->
+            <button>0</button>
+            <button>C</button>
+            <button>=</button>
+            <button>+</button>
+        </div>
+    </main>
+</body>
+
+</html>
