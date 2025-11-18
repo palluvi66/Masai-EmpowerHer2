@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 2px;
+            gap: 10px 5px;
+            width: 55%;
+        }
+
+        div {
+            display: flex;
+            width: 220px;
+            height: 120px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+
+        }
+
+        main>div:first-child {
+            background-color: rgb(240, 90, 9);
+        }
+
+        main>div:nth-child(2) {
+            background-color: rgb(66, 81, 252);
+        }
+
+        main>div:nth-child(3) {
+            background-color: rgb(243, 231, 6);
+        }
+
+        main>div:nth-child(4) {
+            background-color: rgb(168, 6, 243);
+        }
+
+        main>div:nth-child(5) {
+            background-color: rgb(22, 201, 22);
+        }
+
+        main>div:nth-child(6) {
+            background-color: rgb(6, 168, 243);
+        }
+
+        main>div:nth-child(7) {
+            background-color: rgb(249, 141, 82);
+        }
+
+        main>div:nth-child(8) {
+            background-color: rgb(4, 175, 175);
+        }
+
+        main>div:nth-child(9) {
+            background-color: rgb(166, 7, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>2.</div>
+        <div>3.</div>
+        <div>4.</div>
+        <div>5.</div>
+        <div>6.</div>
+        <div>1.</div>
+        <div>7.</div>
+        <div>8.</div>
+        <div>9.</div>
+
+    </main>
+</body>
+
+</html>
