@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 2px;
+            gap: 10px 5px;
+            width: 60%;
+            font-family: "Edu NSW ACT Cursive", cursive;
+            text-align: center;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            /* border: 1px solid black;} */
+            /* gap: 20px; */
+            border-spacing: 6px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            border-radius: 20px;
+            /* padding: 6px; */
+            text-align: center;
+            margin: 10px;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+        }
+
+        thead>tr>th:first-child {
+            /* padding: 6px 30px; */
+            /* border: none; */
+            /* background-color: white; */
+            visibility: hidden;
+        }
+
+        tbody>tr>td:first-child {
+            padding: 6px 30px;
+            border: none;
+            background-color: rgb(175, 228, 243);
+
+        }
+
+        tbody>tr>td:nth-child(2),
+        tbody>tr>td:nth-child(4),
+        tbody>tr>td:nth-child(6) {
+            padding: 6px 30px;
+            border: none;
+            background-color: rgb(243, 197, 222);
+
+        }
+
+        tbody>tr>td:nth-child(3),
+        tbody>tr>td:nth-child(5) {
+            padding: 6px 30px;
+            border: none;
+            background-color: rgb(238, 243, 197);
+
+        }
+
+        thead>tr>th:nth-child(2),
+        thead>tr>th:nth-child(4),
+        thead>tr>th:nth-child(6) {
+            font-weight: 900;
+            padding: 6px 30px;
+            border: none;
+            background-color: rgb(243, 197, 222);
+
+        }
+
+        thead>tr>th:nth-child(3),
+        thead>tr>th:nth-child(5) {
+            margin: 10px;
+            margin-bottom: 10px;
+            padding: 6px 30px;
+            border: none;
+            background-color: rgb(238, 243, 197);
+        }
+
+        h5 {
+            background-color: rgb(175, 228, 243);
+            padding: 10px;
+            border-radius: 20px;
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Weekly schedule</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00</td>
+                    <td>PT</td>
+                    <td>PT</td>
+                    <td>PT</td>
+                    <td>PT</td>
+                    <td>PT</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td>Math</td>
+                    <td>EVS</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Math</td>
+                    <td>EVS</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>EVS</td>
+                    <td>EVS</td>
+                    <td>Math</td>
+                    <td>EVS</td>
+                    <td>EVS</td>
+                    <td>EVS</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>Hindi</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td>Hindi</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>GK</td>
+                    <td>Ml. Sc.</td>
+                    <td>GK</td>
+                    <td>Music</td>
+                    <td>Dance</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>Moral Sc.</td>
+                    <td>GK</td>
+                    <td>Moral Sc.</td>
+                    <td>GK</td>
+                    <td>Art & Craft</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>Music</td>
+                    <td>Dance</td>
+                    <td>Music</td>
+                    <td>Dance</td>
+                    <td>Art & Craft</td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>Games</td>
+                    <td>Physical Activity</td>
+                    <td>Games</td>
+                    <td>Physical Activity</td>
+                    <td>Games</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <h5>Note:</h5>
+    </main>
+</body>
+
+</html>
