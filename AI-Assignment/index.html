@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallavi Yadav — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">Pallavi</a>
+      </div>
+
+      <!-- Mobile nav toggle (checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1 class="headline">Hi, I'm Pallavi. I build clean & modern web experiences.</h1>
+        <p class="sub">Front-end developer focused on responsive interfaces, usable design, and clean code. I love turning ideas into interactive user experiences.</p>
+        <a href="#contact" class="btn primary">Contact Me</a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <p><strong>Available for:</strong></p>
+          <p>Frontend Roles • Freelance Projects • Collaboration</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <p>I’m a Web Engineer with a love for HTML, CSS and thoughtful UI. I focus on accessibility, performance and responsive layouts.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">JavaScript (Basics)</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Node.js & Express (basic)</div>
+        <!-- add more if desired -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Want to work together or have a question? Drop me a message:</p>
+      <a class="btn secondary" href="mailto:nisharoy09153@gmail.com">Email Me</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Pallavi Yadav</p>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // close mobile nav when a link is clicked (nice UX)
+    document.querySelectorAll('.main-nav a').forEach(a=>{
+      a.addEventListener('click', () => {
+        const cb = document.getElementById('nav-toggle');
+        if(cb) cb.checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
