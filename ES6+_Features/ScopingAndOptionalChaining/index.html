@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Scoping and Optional Chaining in ES6+
+</body>
+<script>
+    if (true) {
+  let x = 10;
+  var y = 20;
+}
+console.log(y);
+console.log(x);
+const profile = {
+  user: {
+    details: {
+      email: "test@mail.com"
+    }
+  }
+};
+
+console.log(profile?.user?.details?.email); 
+console.log(profile?.user?.details?.phone); 
+
+
+</script>
+</html>
