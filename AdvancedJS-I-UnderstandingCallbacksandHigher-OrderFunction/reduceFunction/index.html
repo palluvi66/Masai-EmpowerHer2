@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Reduce Function in JavaScript
+</body>
+<script>
+    function countCategories(categories) {
+  return categories.reduce((acc, category) => {
+    acc[category] = (acc[category] || 0) + 1;
+    return acc;
+  }, {});
+}
+
+const input = ["electronics", "clothing", "electronics", "toys", "clothing", "toys", "toys"];
+console.log(countCategories(input));
+
+function sortCategoriesByCount(categories) {
+  const countObj = countCategories(categories);
+
+  return Object.entries(countObj)        
+    .sort((a, b) => b[1] - a[1])        
+    .map(([category]) => category);   
+}
+
+console.log(sortCategoriesByCount(input));
+
+
+</script>
+</html>
